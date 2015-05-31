@@ -43,7 +43,7 @@ for i in range(7776):
     st = ''
     n = i
     for j in range(5):
-        st = st + str(n%6 + 1)
+        st =  str(n%6 + 1) + st
         n = n/6
     st += ' ' + diceware[i] + '\n'
     f.write(st)
