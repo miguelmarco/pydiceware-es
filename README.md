@@ -1,8 +1,15 @@
 # pydiceware-es
 Generador de passphrases basado en las ideas de diceware
 
+# Dependencias
+
+- Python 2.7
+- pycrypto
+- PyQt para la versión con gui
+
 # Uso
 
+## Línea de comando
 El programa `generapassphrase.py` genera una passphrase aleatoria a partr de las palabras contenidas en el archovo (binario) `diccionarios.obj`
 
 Por defecto genera cinco palabras al azar con un total de 60 bits de entropia. Se le pueden pasar las siguientes opciones:
@@ -13,7 +20,7 @@ Por defecto genera cinco palabras al azar con un total de 60 bits de entropia. S
 
 - una palabra cualquiera pasada como parámetro hace que se ignore la opción `-l`, y fuerza a que cada palabra empiece con la letra correspondiente. Es decir, si la palabra que pasamos es `google`, elegirá la passphrase de forma que la primera palabra empiece por `g`, la segunda por `o` y así sucescivamente.
 
-## Ejemplos:
+### Ejemplos:
 
 Para generar una passphrase de 6 letras con 70 bits de entropía
 
@@ -26,6 +33,10 @@ Para generar una passphrase cuyas palabras empiecen por las letras `f,a,c,e,b,o,
 ```
 ./generapassphrase.py facebook -b 50
 ```
+
+## Interfaz gráfica
+
+El programa gui/generapassphrase.py presenta una interfaz gráfica. Símplemente introduce los datos y dale al botón.
 
 
 # Generar diciconarios
