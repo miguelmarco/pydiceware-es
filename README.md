@@ -39,7 +39,7 @@ Para generar una passphrase cuyas palabras empiecen por las letras `f,a,c,e,b,o,
 El programa gui/generapassphrase.py presenta una interfaz gráfica. Símplemente introduce los datos y dale al botón.
 
 
-# Generar diciconarios
+# Generar diccionarios
 
 El programa `seleccionapapalabras.py` sirve para generar el archivo `diccionarios.obj` a partir de varios archivos de texto. Además, genera un archivo llamado `diceware.txt` para ser usado con el método diceware. En este archivo hay una lista de palabras para ser elegidas con cinco tiradas de dado. De este modo se pueden generar passphrases aleatorias sin necesidad de fiarse de un ordenador. Cada una de estas palabras aporta 12.9 bits de entropía.
 
