@@ -1,6 +1,6 @@
 #! /usr/bin/python
 
-from PyQt4 import QtCore, QtGui, uic
+from PyQt5 import QtCore, QtGui, QtWidgets, uic
 try:
     from crypto.Random import random
 except:
@@ -22,9 +22,9 @@ def leepalabras():
     return dic
 
 
-class Programa(QtGui.QDialog):
+class Programa(QtWidgets.QDialog):
     def __init__(self, parent = None):
-        QtGui.QDialog.__init__(self)
+        QtWidgets.QDialog.__init__(self)
         self.ui = uic.loadUi("generapass.ui")
         self.ui.show()
 
@@ -57,7 +57,7 @@ class Programa(QtGui.QDialog):
 
 if __name__ == "__main__":
     dic = leepalabras()
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     window = Programa()
     window.ui.pushButton.clicked.connect(window.genera)
     sys.exit(app.exec_())
